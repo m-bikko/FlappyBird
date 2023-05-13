@@ -1,0 +1,65 @@
+.game {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    margin: 20px auto;
+    border: 2px solid #000;
+    overflow: hidden;
+}
+.slide-left {
+    transition: transform 0.3s ease-out;
+    transform: translateX(-100%);
+}
+.game-area {
+    position: relative;
+    display: flex;
+    width: 400px;
+    height: 100%;
+    background-image: url("/flappy-bird-assets-master/sprites/background-day.png");
+}
+.tap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+.myMaxScore, .myScore{
+    display: inline-block;
+    margin: 10px;
+}
+
+.game_over{
+    padding: 10px;
+    background-color: white;
+    border: 1px solid;
+    display: none;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.bird {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background-image: url("/flappy-bird-assets-master/sprites/bluebird-downflap.png");
+    background-repeat: no-repeat;
+}
+
+.base {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
